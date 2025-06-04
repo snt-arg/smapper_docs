@@ -1,0 +1,78 @@
+site_name: SMapper
+site_url: https://snt-arg.github.io/smapper_docs/
+repo_url: https://github.com/snt-arg/smapper_docs
+theme:
+    logo: assets/logo.png
+    favicon: assets/logo.png
+    features:
+        - content.code.copy
+        - search.suggest
+        - search.highlight
+        - content.footnote.tooltips
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.footer
+
+    icon:
+        repo: fontawesome/brands/github
+    name: material
+    palette:
+        # Dark Mode
+        - scheme: slate
+          primary: black
+          accent: teal
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to light mode
+
+        # Light Mode
+        - scheme: default
+          primary: black
+          accent: teal
+          toggle:
+              icon: material/weather-night
+              name: Switch to dark mode
+markdown_extensions:
+    - admonition
+    - abbr
+    - attr_list
+    - md_in_html
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.blocks.caption
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - footnotes
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator:
+              !!python/name:material.extensions.emoji.to_svg # Page tree
+
+
+nav:
+    - Home:
+          - SMapper: index.md
+          - Platform:
+                - Components: components/index.md
+                - Technical Details:
+                      - Ouster OS0-64: components/technical_details/ouster_os0_64.md
+                      - e-CAM200_CUOAGX: components/technical_details/e_cam200_cuagx.md
+                      - RealSense D435i: components/technical_details/realsense_d435i.md
+                      - Jetson AGX Orin: components/technical_details/jetson_agx_orin.md
+          - Software Stack:
+                - Stack Overview: software_stack/index.md
+                - SMapper API: software_stack/smapper_api.md
+                - SMapper Web App: software_stack/smapper_app.md
+                - Argus Camera ROS: software_stack/argus_cameras_ros.md
+    - Datasets:
+          - Datasets: datasets/index.md
