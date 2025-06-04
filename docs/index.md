@@ -1,6 +1,6 @@
 # 🛰️ SMapper {align=center}
 
-<p align="center">A multi-sensor handheld device for data collection</p>
+<p align="center"><i>A multi-sensor handheld device for data collection</i></p>
 
 ---
 

@@ -39,14 +39,14 @@ These services communicate with ROS through a **ROS bridge**, allowing real-time
 
 ## 🧩 Key Components
 
-| Component            | Description                                                                 |
-| -------------------- | --------------------------------------------------------------------------- |
-| `ouster_ros`         | Official Ouster ROS 2 driver used to interface with the OS0-64 LiDAR.       |
-| `argus_ros` (custom) | Custom-built ROS 2 package for interfacing with 4x Argus 20MP cameras.      |
-| `fastlio2_ros`       | LiDAR odometry package used for pose estimation.                            |
-| `rosbridge_server`   | WebSocket and JSON-based bridge for connecting the web app to ROS.          |
-| `smapper_api`        | RESTful API that exposes control and status endpoints.                      |
-| `smapper_app`        | Web dashboard and visualization layer built for touch-friendly interaction. |
+| Component             | Description                                                                 |
+| --------------------- | --------------------------------------------------------------------------- |
+| `ouster_ros`          | Official Ouster ROS 2 driver used to interface with the OS0-64 LiDAR.       |
+| `argus_ros` (custom)  | Custom-built ROS 2 package for interfacing with 4x Argus 20MP cameras.      |
+| `mola_lidar_odometry` | LiDAR odometry package used for pose estimation.                            |
+| `rosbridge_server`    | WebSocket and JSON-based bridge for connecting the web app to ROS.          |
+| `smapper_api`         | RESTful API that exposes control and status endpoints.                      |
+| `smapper_app`         | Web dashboard and visualization layer built for touch-friendly interaction. |
 
 ---
 
