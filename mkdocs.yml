@@ -62,6 +62,8 @@ markdown_extensions:
 nav:
     - Home:
           - SMapper: index.md
+          - Publications: publications.md
+    - About Device:
           - Platform:
                 - Components: components/index.md
                 - Technical Details:
@@ -74,5 +76,10 @@ nav:
                 - SMapper API: software_stack/smapper_api.md
                 - SMapper Web App: software_stack/smapper_app.md
                 - Argus Camera ROS: software_stack/argus_cameras_ros.md
+    - Guides:
+          - Calibration: setup/calibration.md
+          - Networking: setup/networking.md
+          - Onboard PC Setup: setup/operating_system.md
+
     - Datasets:
           - Datasets: datasets/index.md
