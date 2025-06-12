@@ -118,3 +118,27 @@ sudo systemctl daemon-reload
 sudo systemctl enable multicast-lo.service
 sudo systemctl start multicast-lo.service
 ```
+
+## Setup Ouster
+
+```bash
+sudo apt install dnsmask
+```
+
+edit file on `/etc/dnsmask.d/ouster.conf` and add the following
+
+```bash
+port=0
+interface=eth0
+bind-interfaces
+dhcp-range=192.168.100.10,192.168.100.100,12h
+log-dhcp
+```
+
+Configure the link `eth0` ipv4 to have manual, ip `192.168.100.1` and 24 as the netmask, or `255.255.255.0`
+
+```bash
+sudo systemctl restart dnsmasq
+```
+
+connect the ouster, and use `arp -a` to find ouster IP. The usual os-id.local should also work.
