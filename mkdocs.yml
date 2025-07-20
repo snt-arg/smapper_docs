@@ -77,9 +77,10 @@ nav:
                 - SMapper Web App: software_stack/smapper_app.md
                 - Argus Camera ROS: software_stack/argus_cameras_ros.md
     - Guides:
-          - Calibration: setup/calibration.md
-          - Networking: setup/networking.md
-          - Onboard PC Setup: setup/operating_system.md
+          - JetPack Flashing: guides/jetpack.md
+          - Initial Setup: guides/setup.md
+          - Networking: guides/networking.md
+          - Calibration: guides/calibration.md
 
     - Datasets:
           - Datasets: datasets/index.md

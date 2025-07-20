@@ -119,7 +119,7 @@ sudo systemctl enable multicast-lo.service
 sudo systemctl start multicast-lo.service
 ```
 
-## Setup Ouster
+## Setup Ouster (Needed for PTP Support)
 
 ```bash
 sudo apt install dnsmask
