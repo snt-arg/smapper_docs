@@ -66,21 +66,19 @@ nav:
     - About Device:
           - Platform:
                 - Components: components/index.md
-                - Technical Details:
-                      - Ouster OS0-64: components/technical_details/ouster_os0_64.md
-                      - e-CAM200_CUOAGX: components/technical_details/e_cam200_cuagx.md
-                      - RealSense D435i: components/technical_details/realsense_d435i.md
-                      - Jetson AGX Orin: components/technical_details/jetson_agx_orin.md
           - Software Stack:
                 - Stack Overview: software_stack/index.md
-                - SMapper API: software_stack/smapper_api.md
-                - SMapper Web App: software_stack/smapper_app.md
-                - Argus Camera ROS: software_stack/argus_cameras_ros.md
     - Guides:
-          - JetPack Flashing: guides/jetpack.md
           - Initial Setup: guides/setup.md
+          - JetPack Flashing: guides/jetpack.md
           - Networking: guides/networking.md
           - Calibration: guides/calibration.md
+
+    - References:
+          - SMapper API: software_stack/smapper_api.md
+          - SMapper Web App: software_stack/smapper_app.md
+          - SMapper Web App: software_stack/smapper_toolbox.md
+          - Argus Camera ROS: software_stack/argus_cameras_ros.md
 
     - Datasets:
           - Datasets: datasets/index.md
