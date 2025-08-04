@@ -77,7 +77,7 @@ nav:
     - References:
           - SMapper API: software_stack/smapper_api.md
           - SMapper Web App: software_stack/smapper_app.md
-          - SMapper Web App: software_stack/smapper_toolbox.md
+          - SMapper Toolbox: software_stack/smapper_toolbox.md
           - Argus Camera ROS: software_stack/argus_cameras_ros.md
 
     - Datasets:
