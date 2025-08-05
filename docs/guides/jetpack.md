@@ -1,4 +1,40 @@
-# Jetson AGX Orin: Flashing Guide for e-con Cameras
+# Flashing the Jetson Device
+
+This guide covers the process of flashing the NVIDIA Jetson AGX Orin module with the required Jetpack OS. A specific version and kernel are necessary to ensure compatibility with the e-con Systems camera array.
+
+!!! warning "Physical Access Required"
+
+    This entire process must be performed with the Jetson module on a workbench, not mounted inside the SMapper device. Flashing requires access to a USB-C port that is inaccessible once the module is installed.
+
+---
+
+## Method 1: Flashing Jetpack 6.0 (Recommended & Stable)
+
+This is the official, supported method for ensuring camera compatibility. The kernel patches provided by e-con Systems are built specifically for **Jetpack 6.0**, making this the most reliable path.
+
+The easiest way to install Jetpack 6.0 is by using the **NVIDIA SDK Manager** on a host computer (Linux).
+
+### Flashing Steps:
+
+1.  **Download & Install:** Download and install the [NVIDIA SDK Manager](https://developer.nvidia.com/nvidia-sdk-manager) on your host machine.
+2.  **Connect the Device:** Connect the Jetson AGX Orin to your host machine via the USB-C port. You will need to put the device into **Force Recovery Mode**.
+3.  **Launch SDK Manager:** Start the SDK Manager application. It should automatically detect the connected Jetson device.
+4.  **Select Jetpack Version:** In the target hardware configuration step, deselect the latest version and explicitly choose **Jetpack 6.0** from the dropdown menu.
+5.  **Start Flashing:** Proceed with the on-screen instructions to download the necessary files and flash the operating system to the Jetson module. This process can take a significant amount of time.
+6.  **Post-Installation:** Once flashing is complete, the device can be set up [Initial Device Setup](./setup.md) guide.
+
+---
+
+## Method 2: Guide for Patching Jetpack 6.2 (Experimental)
+
+!!! danger "This is an advanced, experimental guide."
+
+    While Jetpack 6.2 offers significant camera performance improvements, the official e-con Systems kernel patch is not directly compatible.
+    The following steps are based on a [guide](https://www.e-consystems.com/blog/camera/products/nvidia-jetpack-6-2-for-superior-ai-performance-whats-new-what-are-the-steps-to-upgrade/)
+    provided by e-con Systems to manually patch the 6.2 kernel. **Previous attempts to follow this guide were not successful.**
+    This section is preserved for documentation purposes and for developers who wish to continue this work.
+
+### Overview
 
 This guide details the process of flashing an NVIDIA Jetson AGX Orin development
 kit with a custom kernel to support the `e-CAM200_CUOAGX` camera array from e-con Systems.

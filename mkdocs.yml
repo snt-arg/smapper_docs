@@ -70,9 +70,10 @@ nav:
                 - Stack Overview: software_stack/index.md
     - Guides:
           - Initial Setup: guides/setup.md
+          - Calibration: guides/calibration.md
+          - Transferring Bags: guides/external_disk.md
           - JetPack Flashing: guides/jetpack.md
           - Networking: guides/networking.md
-          - Calibration: guides/calibration.md
 
     - References:
           - SMapper API: software_stack/smapper_api.md
