@@ -87,8 +87,8 @@ Bash
 
 ```bash
 # Example for building the production service
-API_URL="[http://10.0.0.1:8000/api/v1](http://10.0.0.1:8000/api/v1)" \
-ROSBOARD_URL="[http://10.0.0.1:8888](http://10.0.0.1:8888)" \
+API_URL="http://10.0.0.1:8000/api/v1" \
+ROSBOARD_URL="http://10.0.0.1:8888" \
 docker-compose build app_prod
 ```
 
