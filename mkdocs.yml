@@ -66,8 +66,9 @@ nav:
     - About Device:
           - Platform:
                 - Components: components/index.md
-          - Software Stack:
-                - Stack Overview: software_stack/index.md
+                - CAD Files: components/cad.md
+          - Software Stack: software_stack/index.md
+          - Sensors Placement: components/sensors.md
     - Guides:
           - Initial Setup: guides/setup.md
           - Calibration: guides/calibration.md
@@ -82,4 +83,5 @@ nav:
           - Argus Camera ROS: software_stack/argus_cameras_ros.md
 
     - Datasets:
-          - Datasets: datasets/index.md
+          - About: datasets/index.md
+          - SMapper Light: datasets/smapper-light.md

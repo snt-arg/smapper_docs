@@ -10,11 +10,21 @@
 
 ## Papers
 
-??? quote "[SLAM Benchmarking Dataset Collected by a Multi-Modal Data Acquisition Platform](https://arxiv.org)"
+??? quote "[Preprint | SMapper: A Multi-Modal Data Acquisition Platform for SLAM Benchmarking](https://arxiv.org/abs/2509.09509)"
 
     ??? abstract
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet ultricies arcu. Sed accumsan dui eu molestie luctus. Quisque at congue dui, quis rhoncus mi. Ut vehicula magna in posuere ornare. Morbi eget ultricies erat, eget consequat mi. Etiam pretium enim sed turpis commodo suscipit. Nunc ullamcorper sollicitudin viverra. Proin a urna ullamcorper, ullamcorper neque vel, ullamcorper risus. Phasellus id sapien in lacus cursus luctus nec quis justo. Vivamus congue urna vel erat pellentesque ultrices. Praesent eget sollicitudin dui. Donec orci ipsum, aliquet sed neque nec, tempor convallis libero. Fusce convallis lorem ut orci ultrices rutrum. Aenean sit amet tortor quis massa fringilla sollicitudin tincidunt a turpis.
+        Advancing research in fields like Simultaneous Localization and Mapping (SLAM) and autonomous navigation critically depends on reliable and reproducible multimodal datasets. While several influential datasets have driven progress in these domains, they often suffer from limitations in sensing modalities, environmental diversity, and the reproducibility of the underlying hardware setups. To address these challenges, this paper introduces SMapper, a novel open-hardware, multi-sensor platform designed explicitly for, though not limited to, SLAM research. The device integrates synchronized LiDAR, multi-camera, and inertial sensing, supported by a robust calibration and synchronization pipeline that ensures precise spatio-temporal alignment across modalities. Its open and replicable design allows researchers to extend its capabilities and reproduce experiments across both handheld and robot-mounted scenarios. To demonstrate its practicality, we additionally release SMapper-light, a publicly available SLAM dataset containing representative indoor and outdoor sequences. The dataset includes tightly synchronized multimodal data and ground-truth trajectories derived from offline LiDAR-based SLAM with sub-centimeter accuracy, alongside dense 3D reconstructions. Furthermore, the paper contains benchmarking results on state-of-the-art LiDAR and visual SLAM frameworks using the SMapper-light dataset. By combining open-hardware design, reproducible data collection, and comprehensive benchmarking, SMapper establishes a robust foundation for advancing SLAM algorithm development, evaluation, and reproducibility.
+
 
     ```bibtex title="citation"
+    @misc{soares2025smappermultimodaldataacquisition,
+          title={SMapper: A Multi-Modal Data Acquisition Platform for SLAM Benchmarking},
+          author={Pedro Miguel Bastos Soares and Ali Tourani and Miguel Fernandez-Cortizas and Asier Bikandi Noya and Jose Luis Sanchez-Lopez and Holger Voos},
+          year={2025},
+          eprint={2509.09509},
+          archivePrefix={arXiv},
+          primaryClass={cs.RO},
+          url={https://arxiv.org/abs/2509.09509},
+    }
     ```
